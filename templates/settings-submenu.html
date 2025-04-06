@@ -1,0 +1,102 @@
+<form class="flexcol">
+  <div class="form-group">
+    <label class="npao-core pi-label-name"
+      >{{localize "Pause icon settings"}}</label
+    >
+    <div class="form-fields">
+      <input class="npao-core pi-path" type="Text" value="{{path}}" />
+      <button class="npao-core pi-picker-button">
+        <i class="fas fa-file-import fa-fw"></i>
+      </button>
+    </div>
+  </div>
+  <br />
+  <div class="form-group">
+    <label class="npao-core pi-label-name"
+      >{{localize "Pause image opacity"}}</label
+    >
+    <div class="form-fields">
+      <input class="npao-core pi-opacity" type="Number" value="{{opacity}}" />
+    </div>
+  </div>
+  <br />
+  <div class="form-group">
+    <label class="npao-core pi-label-name"
+      >{{localize "Pause message text"}}</label
+    >
+    <div class="form-fields">
+      <input class="npao-core pi-text" type="Text" value="{{text}}" />
+    </div>
+  </div>
+  <br />
+  <div class="form-group">
+    <label class="npao-core pi-label-name"
+      >{{localize "Pause message text color"}}</label
+    >
+
+    <div class="form-fields">
+      <input type="color" value="{{textColor}}" data-edit="color-input" />
+      <input
+        name="color-input"
+        class="npao-core pi-text-color"
+        type="Text"
+        value="{{textColor}}"
+      />
+    </div>
+  </div>
+  <br />
+  <div class="form-group">
+    <label class="npao-core pi-label-name"
+      >{{localize "Pause message font size"}}</label
+    >
+    <div class="form-fields">
+      <input class="npao-core pi-font-size" type="Text" value="{{fontSize}}" />
+    </div>
+  </div>
+  <br />
+  <div class="form-group">
+    <label class="npao-core pi-label-name"
+      >{{localize "Pause icon X dimension"}}</label
+    >
+    <div class="form-fields">
+      <input
+        class="npao-core pi-dimensionX"
+        type="Number"
+        value="{{dimensionX}}"
+      />
+    </div>
+  </div>
+  <br />
+  <div class="form-group">
+    <label class="npao-core pi-label-name"
+      >{{localize "Pause icon Y dimension"}}</label
+    >
+    <div class="form-fields">
+      <input
+        class="npao-core pi-dimensionY"
+        type="Number"
+        value="{{dimensionY}}"
+      />
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="form-group">
+    <label class="npao-core pi-label-name"
+      >{{localize "Pause icon shadow effect"}}</label
+    >
+    <div class="form-fields">
+      {{#if shadow}}
+      <input class="npao-core pi-shadow" type="checkbox" checked />
+      {{else}}
+      <input class="npao-core pi-shadow" type="checkbox" />
+      {{/if}}
+    </div>
+  </div>
+  <br />
+  <header class="npao-core pi-submenu-header">
+    <button type="submit" name="submit" class="npao-core pi-settings-save">
+      {{localize "Book 'em, Dano!"}}
+    </button>
+  </header>
+</form>

@@ -1,0 +1,32 @@
+<form autocomplete="off" onsubmit="event.preventDefault();">
+  <div class="form-group">
+    <label>Playlist</label>
+    <select
+      name="playlist"
+      class="playlist-select"
+      title="playlistselection"
+      default=""
+    >
+      {{#select playlist}}
+      <option value="">None</option>
+      {{#each playlists}}
+      <option value="{{this.id}}">{{this.name}}</option>
+      {{/each}} {{/select}}
+    </select>
+    <p class="notes">Select a playlist</p>
+  </div>
+
+  <div class="form-group">
+    <label>Track</label>
+    <select name="track" class="track-select" title="trackselection">
+      {{#select track}} {{#each playlistSounds}}
+      <option value="{{this.id}}">{{this.name}}</option>
+      {{/each}} {{/select}}
+    </select>
+    <p class="notes">Select a track</p>
+  </div>
+
+  <button type="submit" name="submit">
+    <i class="far fa-save"></i> Save Changes
+  </button>
+</form>
