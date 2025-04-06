@@ -12,11 +12,6 @@ Hooks.once("init", async function () {
 
 //-------------------------------------------------
 Hooks.once("ready", async function () {
-  FoundryLogo.hideAll();
-  config.rootStyle.setProperty("--logovis", "visible");
-
-  //-------------------------------------------------
-  //TODO: revisit Entire Hype track approach
   game.npao.hypeTrack = new HypeTrack();
 });
 

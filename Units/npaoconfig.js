@@ -1,4 +1,4 @@
-export const moduleName = "npao-core";
+export const moduleName = "npao-hypetrax";
 export const HYPETRACK_CONFIG = {
   get HypeTrack() {
     return {
